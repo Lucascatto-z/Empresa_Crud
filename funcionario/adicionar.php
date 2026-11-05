@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <?php
-        include_once("../menu.php");
+    include_once("../menu.php");
     ?>
-         <h1>Cadastro de funcionario</h1>
-    <form action="inserir.php" method ="post"></form>
-    <p>
+    <div class="container">
+        <h1>Cadastro de Funcionários</h1>
+        <form action="inserir.php" method="POST">
+            <p>
+                <label>Nome:</label>
+                <input type="text" name="nome" required>
+            </p>
 
-    <label for ="nome">Nome:</label>
-    <input type="text" name ="name" required>
+            <p>
+                <label>Email:</label>
+                <input type="email" name="email" required>
+            </p>
 
-    </p>
-    <p>
+            <p>
+                <label>Cargo:</label>
+                <input type="text" name="cargo" required>
+            </p>
 
-    <label for ="email">Email:</label>
-    <input type="email" name ="email" required>
+            <p>
+                <label>Salário:</label>
+                <input type="number" name="salario" step ="0.01" required>
+            </p>
 
-    </p>
-    <p>
+            
+            <p>
+                <label>Data de Admissão:</label>
+                <input type="date" name="admissao"required>
+            </p>
 
-    <label for ="cargo">Cargo:</label>
-    <input type="text" name ="cargo" required>
-    
-    </p>
-    <p>
-
-    <label for ="salario">Salario:</label>
-    <input type="number" name ="salario" step="0.01" required>
-    
-    </p>
-    <p>
-
-    <label for ="data">Data de admissao:</label>
-    <input type="date" name ="admissao" required>
-    
-    </p>
-    <p>
-
-    <input type="submit" value="Cadastrar">
-    <input type="reset" value="Limpar">
-    
-    </p>
-    
+            <p>
+                <input type = "submit" value = "Cadastrar">
+                <input type = "reset" value = "Limpar">
+            </p>
+        </form>
+    </div>
 </body>
+
 </html>
